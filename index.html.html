@@ -1,0 +1,158 @@
+<html>
+
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style>
+			body {
+				margin: 0;
+				font-family: 'Roboto', sans-serif;
+				background-color: #ddd;
+			}
+
+			.title {
+				font-size: 2vw;
+				color: #ddd;
+			}
+
+			.bookmarks {
+				width: 1024px;
+				height: 100vh;
+				margin: 0 auto;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background-color: #444;
+			}
+
+			.bookmark {
+				position: relative;
+				width: 100%;
+				border-top: 0.5vw #666 solid;
+				cursor: pointer;
+				transition: border 0.1s ease;
+			}
+
+			.bookmark:hover {
+				border-top: 0.5vw #ddd solid;
+			}
+
+			.bookmark-background {
+				position: absolute;
+				background-color: #bbb;
+				width: 100%;
+				height: 100%;
+
+				left: 0%;
+
+				transition: width 0.1s ease, left 0.1s ease, background-color 0.1s ease;
+
+			}
+
+			.bookmark:hover .bookmark-background {
+				width: 105%;
+				left: -2.5%;
+			}
+
+			.bookmark:active .bookmark-background {
+				width: 110%;
+				left: -5%;
+				background-color: #ccc;
+			}
+
+			.bookmark-foreground {
+				position: relative;
+				font-size: 0.75vw;
+				background-color: #111;
+				color: #bbb;
+
+				padding: 1vw;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+
+				transition: background-color 0.1s ease;
+			}
+
+			.bookmark:hover .bookmark-foreground {
+				background-color: #222;
+			}
+
+			.bookmark .text {
+				display: flex;
+				flex-direction: column;
+				margin-left: 1vw;
+			}
+
+			.bookmark img {
+				width: 2vw;
+				height: 2vw;
+			}
+
+			.bookmark .title {
+				font-size: 1.25vw;
+			}
+
+			.bookmark .address {
+				color: #666;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="bookmarks">
+			<div class="title">Bookmarks</div>
+			<div class="bookmark">
+				<div class="bookmark-background"></div>
+				<div class="bookmark-foreground">
+					<img src="icon.png"></img>
+					<div class="text">
+						<div class="title">Sparx Web</div>
+						<div class="address">http://www.sparx.co.uk</div>
+					</div>
+				</div>
+			</div>
+			<div class="bookmark">
+				<div class="bookmark-background"></div>
+				<div class="bookmark-foreground">
+					<img src="icon.png"></img>
+					<div class="text">
+						<div class="title">Sparx Web</div>
+						<div class="address">http://www.sparx.co.uk</div>
+					</div>
+				</div>
+			</div>
+			<div class="bookmark">
+				<div class="bookmark-background"></div>
+				<div class="bookmark-foreground">
+					<img src="icon.png"></img>
+					<div class="text">
+						<div class="title">Sparx Web</div>
+						<div class="address">http://www.sparx.co.uk</div>
+					</div>
+				</div>
+			</div>
+			<div class="bookmark">
+				<div class="bookmark-background"></div>
+				<div class="bookmark-foreground">
+					<img src="icon.png"></img>
+					<div class="text">
+						<div class="title">Sparx Web</div>
+						<div class="address">http://www.sparx.co.uk</div>
+					</div>
+				</div>
+			</div>
+			<div class="bookmark">
+				<div class="bookmark-background"></div>
+				<div class="bookmark-foreground">
+					<img src="icon.png"></img>
+					<div class="text">
+						<div class="title">Sparx Web</div>
+						<div class="address">http://www.sparx.co.uk</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
